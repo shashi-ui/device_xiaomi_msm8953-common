@@ -255,7 +255,7 @@ vendor/firmware/a530_pm4.fw
 usr/keylayout/gpio-keys.kl:vendor/usr/keylayout/gpio-keys.kl
 usr/keylayout/synaptics_dsx_v21.kl:vendor/usr/keylayout/synaptics_dsx_v21.kl
 usr/keylayout/uinput-fpc.kl:vendor/usr/keylayout/uinput-fpc.kl
-usr/keylayout/uinput-goodix.kl:vendor/usr/keylayout/uinput-goodix.kl
+usr/keylayout/uinput-goodix.kl:vendor/usr/keylayout/gf3208.kl
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8953.so
