@@ -340,10 +340,6 @@ firmware_directories /vendor/firmware_mnt/image/
 # Kmsg device
 /dev/kmsg                                               0620   root       system
 
-# LED class devices
-/sys/class/leds/red      blink        0640    system    system
-/sys/class/leds/red      brightness   0640    system    system
-
 # NPU device
 /dev/msm_npu             0644   system     system
 
