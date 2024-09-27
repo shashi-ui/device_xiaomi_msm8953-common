@@ -17,8 +17,8 @@ persist.vendor.audio.hw.binder.size_kbyte=1024 \
 persist.vendor.audio.speaker.prot.enable=false \
 ro.audio.soundfx.dirac=true \
 ro.af.client_heap_size_kbyte=7168 \
-ro.config.media_vol_steps=30 \
-ro.config.vc_call_vol_steps=6 \
+ro.config.media_vol_steps=25 \
+ro.config.vc_call_vol_steps=7 \
 ro.vendor.audio.sdk.fluencetype=fluence \
 ro.vendor.audio.sdk.ssr=false \
 vendor.audio.dolby.ds2.enabled=false \
@@ -94,7 +94,6 @@ persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
 ro.hardware.egl=adreno \
-ro.hardware.vulkan=msm8953 \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=2 \
 ro.vendor.display.cabl=2 \
@@ -153,7 +152,6 @@ persist.vendor.data.mode=concurrent
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-DEVICE_PROVISIONED=1 \
 persist.radio.multisim.config=dsds \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.vendor.radio.custom_ecc=1 \
@@ -170,6 +168,20 @@ vendor.service.qti.ims.enabled=1
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true
+
+# Enable B service adj transition by default
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.sys.fw.bservice_enable=true \
+ro.vendor.qti.sys.fw.bservice_limit=5 \
+ro.vendor.qti.sys.fw.bservice_age=5000
+
+# Trim properties
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.sys.fw.use_trim_settings=true \
+ro.vendor.qti.sys.fw.empty_app_percent=50 \
+ro.vendor.qti.sys.fw.trim_empty_percent=100 \
+ro.vendor.qti.sys.fw.trim_cache_percent=100 \
+ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \

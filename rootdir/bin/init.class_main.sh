@@ -30,6 +30,6 @@
 #
 # simple script to start radio properly
 #
-start vendor.qcrild
-start vendor.qcrild2
+start vendor.ril-daemon
+start vendor.ril-daemon2
 start vendor.dataqti
