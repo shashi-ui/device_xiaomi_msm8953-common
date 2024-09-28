@@ -162,7 +162,7 @@ ril.subscription.types=NV,RUIM \
 ro.telephony.default_network=22,20 \
 ro.telephony.iwlan_operation_mode=legacy \
 telephony.lteOnCdmaDevice=1 \
-vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 vendor.service.qti.ims.enabled=1
 
 # Time Services

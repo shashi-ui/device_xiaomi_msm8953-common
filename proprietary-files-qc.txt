@@ -457,7 +457,7 @@ vendor/etc/init/dataqti.rc
 vendor/etc/init/ipacm-diag.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/port-bridge.rc
-vendor/etc/init/vendor.rild.rc|a9e3afdae11aed534ed2fbce5f52acc67471d2b4
+vendor/etc/init/vendor.rild.legacy.rc
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libnetmgr.so
