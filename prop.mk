@@ -163,7 +163,8 @@ ro.telephony.default_network=22,20 \
 ro.telephony.iwlan_operation_mode=legacy \
 telephony.lteOnCdmaDevice=1 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-vendor.service.qti.ims.enabled=1
+vendor.service.qti.ims.enabled=1 \
+net.tcp.2g_init_rwnd=10
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -185,4 +186,11 @@ ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.vendor.usb.config.extra=none
+vendor.usb.rmnet.func.name=rmnet_bam \
+vendor.usb.rmnet.inst.name=rmnet \
+vendor.usb.rndis.func.name=rndis_bam \
+vendor.usb.dpl.inst.name=dpl
+
+# wifi
+PRODUCT_PROPERTY_OVERRIDES += \
+wifi.interface=wlan0
